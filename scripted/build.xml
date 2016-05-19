@@ -149,12 +149,20 @@
         <file name="scripts/ui/facets/enumerated-facet.js"/>
         <file name="scripts/ui/facets/list-facet.js"/>
         <file name="scripts/ui/facets/cloud-facet.js"/>
+        <file name="scripts/ui/facets/image-facet.js"/>
         <file name="scripts/ui/facets/numeric-range-facet.js"/>
         <file name="scripts/ui/facets/alpha-range-facet.js"/>
         <file name="scripts/ui/facets/text-search-facet.js"/>
         <file name="scripts/ui/facets/hierarchical-facet.js"/>
         <file name="scripts/ui/facets/slider-facet.js"/>
         <file name="scripts/ui/facets/slider.js"/>
+        <file name="scripts/ui/facets/timegrid-facet.js"/>
+        <file name="scripts/ui/facets/week-facet.js"/>
+        <file name="scripts/ui/facets/month-facet.js"/>
+        <file name="scripts/ui/facets/dstructs.js"/>
+        <file name="scripts/ui/facets/util/date.js"/>
+        <file name="scripts/ui/facets/date-l10n.js"/>
+        <file name="scripts/ui/facets/util/jquery.prettybox.js"/>
       </filelist>
       <fileset dir="${src}/">
         <include name="scripts/ui/views/*.js"/>

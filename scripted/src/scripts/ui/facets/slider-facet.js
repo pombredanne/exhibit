@@ -30,8 +30,10 @@ Exhibit.SliderFacet._settingSpecs = {
     "histogram":        { "type": "boolean", "defaultValue": true },
     "horizontal":       { "type": "boolean", "defaultValue": true },
     "showMissing":      { "type": "boolean", "defaultValue": true},
-    "inputText":        { type: "boolean", defaultValue: true },
-    "selection":        { "type": "float", "dimensions": 2}
+    "inputText":        { "type": "boolean", "defaultValue": true },
+    "selection":        { "type": "float", "dimensions": 2},
+    "height":           { "type": "text" },
+    "width":            { "type": "text" }
 };
 
 /**
@@ -371,8 +373,9 @@ Exhibit.SliderFacet.prototype.importState = function(state) {
             this._range.max = state.max;
         }
         this._slider._setMax(this._range.max);
+
+        this._notifyCollection();
     }
-    this._notifyCollection();
 };
 
 /**

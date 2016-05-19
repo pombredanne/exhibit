@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="http://www.simile-widgets.org/styles/common.css" />
     <link rel="stylesheet" href="http://www.simile-widgets.org/exhibit3/exhibit3.css" />
     <link rel="exhibit/data" href="#demo-data" type="text/html"
-    data-ex-item-type="Exhibit" 
+    data-ex-item-type="Exhibit"
     data-ex-plural-label="Exhibits"
     />
-    
+
     <!-- Replace the URL here with http://api.simile-widgets.org/exhibit/current/exhibit-api.js -->
     <script src="api/exhibit-api.js?bundle=false"></script>
     <!-- Hack to hide the table *if* exhibit successfully loads -->
@@ -52,13 +52,15 @@
         e.g. <a href="presidents/presidents.html?exhibit-dev=true">"presidents/presidents.html?exhibit-dev=true"</a>.</p>
 
       <div class="column" style="width: 200; float: left">
-        <div data-ex-role="facet" data-ex-expression=".Views"></div>
+        <div data-ex-role="facet" data-ex-expression=".Views"
+        data-ex-scroll="false"></div>
         <div data-ex-role="facet" data-ex-expression=".Facets"
-        data-ex-missing-label="none"></div>
+        data-ex-missing-label="none" data-ex-scroll="false"></div>
       </div>
 
       <div class="column" style="width: 200; float:right">
-        <div data-ex-role="facet" data-ex-expression=".Data"></div>
+        <div data-ex-role="facet" data-ex-expression=".Data"
+        data-ex-scroll="false"></div>
         <div data-ex-role="facet" data-ex-facet-label="Other Features"
              data-ex-expression=".Other" data-ex-show-missing="false"
              data-ex-scroll="false"></div>
@@ -106,7 +108,7 @@
       <tr><td>ICD</td><td>icd/index.html</td>
         <td>Tile</td><td>List;Hierarchical</td><td>json</td><td></td>
         <td>ICD10 Medical Terminology demonstrating the Hierarchical Facet</td>
-        </tr>   
+        </tr>
 
       <tr><td>Candidates</td><td>history/decide.html</td>
         <td>Tile</td><td>List</td><td>json</td><td>History</td>
@@ -132,7 +134,7 @@
         <td>Tile</td><td>List</td><td>json</td><td></td>
         <td>Test of Large-Data-Set Loading and Faceting performance</td></tr>
 
-      <tr><td>CSV</td><td>italian-soccer/italian-soccer.html</td>
+      <tr><td>Italian Soccer</td><td>italian-soccer/italian-soccer.html</td>
         <td>Map;Thumbnail;Tabular</td><td>List</td><td>TSV/CSV</td><td></td>
         <td>Demonstration of csv/tsv data loading (plus <a href="csv/tutorial.html">Tutorial</a>)</td></tr>
 
@@ -158,6 +160,29 @@
         <td>Thumbnail;Timeline</td><td>List<td>json</td>
         <td>Exhibit Site</td>
         <td>A reimagining of Topher's breakfast cereal guide</td></tr>
+
+      <tr><td>Election 2008</td><td>polymap/election08.html</td>
+        <td>Map</td>
+        <td>List</td>
+        <td>json</td>
+        <td>Color Coder;Polymap</td>
+        <td>A map of the 2008 election demonstrating polygonal
+        &ldquo;markers&rdquo; that can be color coded.</td>
+
+      <tr><td>Mushrooms</td><td>shrooms/shrooms.html</td>
+        <td>Thumbnail</td>
+        <td>Image;Text Search</td>
+        <td>json</td>
+        <td></td>
+        <td>A demonstration of the image facet.</td>
+
+      <tr><td>Slider</td><td>slider/index.html</td>
+        <td>List</td>
+        <td>Slider</td>
+        <td>json</td>
+        <td></td>
+        <td>A demonstration of the slider facet.</td>
+
     </table>
   </body>
 </html>

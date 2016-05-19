@@ -209,7 +209,6 @@ div.exhibit-facet-childrenContainer {
  */
 
 div.exhibit-slider { 
-    font-size: 0; /* IE sucks */
     padding-left: 10px;
 }
 
@@ -325,3 +324,4 @@ div.countBackground { /* this class makes a window partially transparent */
  .exhibit-imageFacet-value-selected {
 	background: #fcc;
 }
+
